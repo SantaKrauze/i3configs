@@ -10,7 +10,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
-filetype plugin cindent on
+filetype plugin indent on
 
 inoremap { {}<left>
 inoremap {{ {
