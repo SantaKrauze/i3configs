@@ -2,13 +2,14 @@ syntax enable
 set number
 set nocompatible
 filetype off
-set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
 
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'Valloric/YouCompleteMe'
+call plug#begin('~/.vim/autoload')
 
-call vundle#end()
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'dracula/vim', {'name':'dracula'}
+
+call plug#end()
 filetype plugin indent on
 
 let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
