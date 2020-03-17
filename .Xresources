@@ -11,7 +11,7 @@
 
 ! red
 *.color1: #d12f2c
-*.color9: #fa3935
+*.color9: #ab5f39
 
 ! green
 *.color2: #819400
@@ -19,7 +19,7 @@
 
 ! yellow
 *.color3: #b08500
-*.color11: #d9a400
+*.color11: #d7d634
 
 ! blue
 *.color4: #2587cc
@@ -30,8 +30,8 @@
 *.color13: #8086e8
 
 ! cyan
-*.color6: #289c93
-*.color14: #33c5ba
+*.color6: #3caea5
+*.color14: #26c1b6
 
 ! white
 *.color7: #bfbaac
@@ -39,9 +39,6 @@
 
 !! URxvt Appearance
 URxvt.font: xft:IBMPlexMono:size=11
-#URxvt.boldFont: -*-rissole-*
-#URxvt.italicFont: -*-rissole-*
-#URxvt.boldItalicfont: -*-rissole-*
 URxvt.letterSpace: 0
 URxvt.lineSpace: 0
 URxvt.geometry: 92x24
