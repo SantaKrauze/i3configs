@@ -13,9 +13,13 @@ set rtp+=~/.vim/bundle/Vundle.vim
 
 call plug#begin('~/.vim/autoload')
 
+Plug 'rip-rip/clang_complete'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
+
+let g:clang_library_path='/usr/lib64/libclang.so.9'
+
 
 filetype plugin indent on
 
