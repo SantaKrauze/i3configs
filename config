@@ -40,8 +40,8 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec dmenu_run -b -nb '#697C7F' -sb '#455A64' -sf '#81C784' -fn 'pango:IBMPlexMono 10'
 
 # disable capslock and switch it with escape
-xmodmap -e "clear lock"
-xmodmap -e "keysym Caps_Lock = Escape"
+#xmodmap -e "clear lock"
+#xmodmap -e "keysym Caps_Lock = Escape"
 
 # change focus
 bindsym $mod+j focus left
@@ -148,9 +148,9 @@ mode "Exit (L)ogout, (R)eboot, (P)oweroff" {
 }
 #locking and stuff
 bindsym $mod+Shift+e mode "Exit (L)ogout, (R)eboot, (P)oweroff"
-bindsym $mod+Shift+x exec $HOME/.bin/scripts/lock.sh
-exec --no-startup-id xautolock -time 5 -locker 'exec $HOME/.bin/scripts/lock.sh'
-exec --no-startup-id xss-lock --transfer-sleep-lock -- $HOME/.bin/scripts/lock.sh --nofork
+bindsym $mod+Shift+x exec $HOME/i3configs/lock.sh
+exec --no-startup-id xautolock -time 5 -locker 'exec $HOME/i3configs/lock.sh' 
+exec --no-startup-id xss-lock --transfer-sleep-lock -- $HOME/i3configs/lock.sh --nofork
 
 #printscreen
 bindsym Print exec scrot ~/Pictures/%m-%d_%H-%M-.png
