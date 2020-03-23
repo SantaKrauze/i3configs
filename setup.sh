@@ -1,12 +1,15 @@
 #!/bin/sh
 
 set -e
-echo Deploying dotfiles:
+echo Deploying files:
 cp .vimrc ~/
 cp .Xresources ~/
 cp config ~/.config/i3
 cp xorg.conf /etc/X11
 cp Xresources /etc/X11/xdm
+mkdir ~/Pictures/bg
+cp icon.png ~/Pictures/bg
+cp 2.png ~/Pictures/bg
 
 echo Setting privilages:
 chmod +x lock.sh
@@ -20,7 +23,10 @@ echo i3 basics:
 dnf install nodejs-devel i3 i3lock xdm NetworkManager network-manager-applet dbus-devel libX11-devel libXrandr-devel glib2-devel pango-devel gtk2-devel libxdg-basedir-devel libXScrnSaver-devel python-devel cmake 
 
 echo Other i3 stuff:
-dnf install xss-lock xbacklight scrot lxappearance
+dnf install xss-lock xbacklight scrot lxappearance thunar
 
 echo All the rest:
 dnf install git vim gvim tlp htop gcc texlive texmaker scidavis ffmpeg imlib2 glibc scrot lpf-spotify-client
+
+echo Setting it up:
+feh --bg-fill ~/Pictures/wallpaper.png
