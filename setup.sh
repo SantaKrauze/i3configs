@@ -17,6 +17,7 @@ chmod +x lock.sh
 echo Adding rpmfusion:
 dnf install http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm 
 dnf install http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf config-manager --add-repo https://repo.vivaldi.com/archive/vivaldi-fedora.repo
 
 echo Installing repos:
 echo i3 basics:
@@ -26,7 +27,7 @@ echo Other i3 stuff:
 dnf install dunst xss-lock xbacklight scrot feh lxappearance thunar
 
 echo All the rest:
-dnf install git vim gvim tlp htop gcc texlive texmaker scidavis ffmpeg imlib2 glibc scrot lpf-spotify-client
+dnf install vivaldi-stable git vim gvim tlp htop gcc texlive texmaker scidavis ffmpeg imlib2 glibc scrot lpf-spotify-client
 
 echo Setting it up:
 feh --bg-fill ~/Pictures/bg/2.png
