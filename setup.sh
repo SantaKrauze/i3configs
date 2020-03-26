@@ -26,7 +26,7 @@ echo Other i3 stuff:
 dnf install dunst xss-lock xbacklight scrot feh lxappearance thunar
 
 echo All the rest:
-dnf install chromium chromium-vaapi git vim gvim tlp htop gcc texlive texmaker scidavis ffmpeg imlib2 glibc scrot lpf-spotify-client
+dnf install firefox chromium chromium-vaapi git vim gvim tlp htop gcc texlive texmaker scidavis ffmpeg imlib2 glibc scrot lpf-spotify-client
 
 echo Setting it up:
 feh --bg-fill ~/Pictures/bg/2.png
