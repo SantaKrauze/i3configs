@@ -32,7 +32,7 @@ exec --no-startup-id ~/.fehbg
 bindsym $mod+Return exec urxvt
 #bindsym $mod+c exec chromium-browser
 bindsym $mod+b exec firefox
-bindsym $mod+t exec thunar
+bindsym $mod+e exec thunar
 
 # kill focused window
 bindsym $mod+Shift+q kill
