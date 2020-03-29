@@ -25,6 +25,8 @@ dnf install nodejs-devel i3 i3lock xdm NetworkManager network-manager-applet dbu
 echo Other i3 stuff:
 dnf install dunst xss-lock xbacklight scrot feh lxappearance thunar
 
+systemctl enable xdm
+
 echo All the rest:
 dnf install firefox chromium chromium-vaapi git vim gvim tlp htop gcc texlive texmaker scidavis ffmpeg imlib2 glibc scrot lpf-spotify-client
 
