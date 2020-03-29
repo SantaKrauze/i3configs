@@ -26,12 +26,12 @@ echo i3 basics:
 dnf install nodejs-devel i3 i3lock xdm NetworkManager network-manager-applet dbus-devel libX11-devel libXrandr-devel glib2-devel pango-devel gtk2-devel libxdg-basedir-devel libXScrnSaver-devel python-devel cmake 
 
 echo Other i3 stuff:
-dnf install dunst xss-lock xbacklight feh lxappearance thunar
+dnf install dunst xss-lock xbacklight feh lxappearance ranger thunar
 
 systemctl enable xdm
 
 echo All the rest:
-dnf install firefox chromium chromium-vaapi vim gvim tlp htop gcc texlive texmaker scidavis ffmpeg imlib2 glibc scrot lpf-spotify-client
+dnf install firefox vim gvim tlp htop gcc texlive texmaker scidavis ffmpeg imlib2 glibc scrot lpf-spotify-client
 
 echo Setting it up:
 feh --bg-fill ~/Pictures/bg/2.png
