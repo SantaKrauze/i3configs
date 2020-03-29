@@ -38,6 +38,8 @@
 *.color15: #fdf6e3
 
 !! URxvt Appearance
+URxvt.transparent: true
+URxvt.shading: 20
 URxvt.font: xft:IBMPlexMono:size=11
 URxvt.letterSpace: 0
 URxvt.lineSpace: 0
