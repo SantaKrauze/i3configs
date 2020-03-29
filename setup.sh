@@ -4,9 +4,12 @@ set -e
 echo Deploying files:
 cp .vimrc ~/
 cp .Xresources ~/
+mkdir ~/.config
+mkdir ~/.config/i3
 cp config ~/.config/i3
 cp xorg.conf /etc/X11
 cp Xresources /etc/X11/xdm
+mkdir ~/Pictures
 mkdir ~/Pictures/bg
 cp icon.png ~/Pictures/bg
 cp 2.png ~/Pictures/bg
@@ -28,7 +31,7 @@ dnf install dunst xss-lock xbacklight scrot feh lxappearance thunar
 systemctl enable xdm
 
 echo All the rest:
-dnf install firefox chromium chromium-vaapi git vim gvim tlp htop gcc texlive texmaker scidavis ffmpeg imlib2 glibc scrot lpf-spotify-client
+dnf install firefox chromium chromium-vaapi vim gvim tlp htop gcc texlive texmaker scidavis ffmpeg imlib2 glibc scrot lpf-spotify-client
 
 echo Setting it up:
 feh --bg-fill ~/Pictures/bg/2.png
