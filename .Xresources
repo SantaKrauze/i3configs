@@ -1,45 +1,46 @@
 !! Colorscheme
 
-! special
-*.foreground: #93a1a1
-*.background: #141c21
-*.cursorColor: #afbfbf
+
+*foreground: #4D4D4C
+*background: #EEEEEE
 
 ! black
-*.color0: #263640
-*.color8: #4a697d
+*color0: #EDEDED
+*color8: #969694
 
 ! red
-*.color1: #d12f2c
-*.color9: #ab5f39
+*color1: #D7005F
+*color9: #D7005F
 
 ! green
-*.color2: #819400
-*.color10: #a4bd00
+*color2: #718C00
+*color10: #718C00
 
-! yellow
-*.color3: #b08500
-*.color11: #d7d634
+! yellow / orange
+*color3: #D75F00
+*color11: #D75F00
 
 ! blue
-*.color4: #2587cc
-*.color12: #2ca2f5
+
+*color4: #4271AE
+*color12: #4271AE
 
 ! magenta
-*.color5: #696ebf
-*.color13: #8086e8
+*color5: #8959A8
+*color13: #8959A8
 
 ! cyan
-*.color6: #3caea5
-*.color14: #26c1b6
+*color6: #3E999F
+*color14: #3E999F
 
 ! white
-*.color7: #bfbaac
-*.color15: #fdf6e3
+*color7: #4D4D4C
+!*color15: #F5F5F5
+*color15: #4D4D4C
 
 !! URxvt Appearance
-URxvt.transparent: true
-URxvt.shading: 20
+URxvt.transparent: false
+URxvt.shading: 13
 URxvt.font: xft:IBMPlexMono:size=11
 URxvt.letterSpace: 0
 URxvt.lineSpace: 0
