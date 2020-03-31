@@ -40,7 +40,7 @@
 
 !! URxvt Appearance
 URxvt.transparent: false
-URxvt.shading: 13
+URxvt.shading: 20
 URxvt.font: xft:IBMPlexMono:size=11
 URxvt.letterSpace: 0
 URxvt.lineSpace: 0
