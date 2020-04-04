@@ -14,3 +14,4 @@ All you need to do is clone the repo to the home directory, give the setup.sh pe
 TO DO:
 -scrot needs libgiblib
 -feh needs xdisplay
+-yeah this isnt working dont do the setup.sh xd
