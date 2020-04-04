@@ -31,7 +31,7 @@ dnf install dunst xss-lock xbacklight feh lxappearance ranger thunar
 systemctl enable xdm
 
 echo All the rest:
-dnf install firefox vim gvim tlp htop gcc texlive texmaker scidavis ffmpeg imlib2 glibc scrot lpf-spotify-client
+dnf install firefox vim gvim tlp htop gcc texlive texmaker scidavis ffmpeg imlib2 glibc lpf-spotify-client
 
 echo Setting it up:
 feh --bg-fill ~/Pictures/bg/2.png

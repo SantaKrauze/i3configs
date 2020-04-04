@@ -44,6 +44,10 @@ bindsym $mod+d exec dmenu_run -b -nb '#697C7F' -sb '#455A64' -sf '#81C784' -fn '
 # disable capslock and switch it with escape
 #xmodmap -e "clear lock"
 #xmodmap -e "keysym Caps_Lock = Escape"
+exec_always --no-startup-id xmodmap -e "clear lock"
+#exec_always --no-startup-id xmodmap -e "keycode 9 = Caps_Lock NoSymbol Caps_Lock"
+exec_always --no-startup-id xmodmap -e "keycode 66 = Escape NoSymbol Escape"
+#exec_always "setxkbmap -layout pl -option caps:escape"
 
 # change focus
 bindsym $mod+j focus left
@@ -151,7 +155,7 @@ mode "Exit (L)ogout, (R)eboot, (P)oweroff" {
 #locking and stuff
 bindsym $mod+Shift+e mode "Exit (L)ogout, (R)eboot, (P)oweroff"
 bindsym $mod+Shift+x exec $HOME/i3configs/lock.sh
-exec --no-startup-id xautolock -time 5 -locker 'exec $HOME/i3configs/lock.sh' 
+exec --no-startup-id xautolock -time 8 -locker 'exec $HOME/i3configs/lock.sh' 
 exec --no-startup-id xss-lock --transfer-sleep-lock -- $HOME/i3configs/lock.sh --nofork
 
 #printscreen
